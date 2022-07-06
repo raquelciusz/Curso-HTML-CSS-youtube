@@ -71,6 +71,7 @@ section {
     max-width: 650px;
     padding-left: 20px;
     color: white;
+    display: inline-block;
 }
 
 #quarta {
