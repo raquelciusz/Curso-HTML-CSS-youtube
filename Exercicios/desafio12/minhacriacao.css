@@ -20,15 +20,12 @@ header {
 
 header > h1 {
     font-family: 'Passion One', cursive;
-    font-size: 153px;
+    font-variant: small-caps;
+    font-size: 13vw;
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 40px;
-}
-
-.letra {
-    font-size: 120px;
 }
 
 header > p {
