@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: url(pacote-d013/imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    height: 100vh;
+    position: relative; /**pra poder mexer na centralizacao**/
+}
+
+section#telefone{
+    height: 627px;
+    width: 311px;
+    position: absolute; /**pra poder mexer na centralizacao**/
+    top: 50%; /**dei um espacamento de 50% no topo**/
+    left: 50%; /**dei um espacamento de 50% no lado esquerdo**/
+    transform: translate(-50%, -50%); /**mas esse espacamento pega a pontinho superior esquerda e deixa no meio da tela, pra arrumar isso usamos uma transformacao pra puxar a section e deixar centralizada **/
+    background: url(pacote-d013/imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+}
