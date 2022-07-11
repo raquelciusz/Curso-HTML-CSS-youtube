@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0px;
+            background-color: gray;
         }
 
         td.num {
@@ -33,10 +51,11 @@
 <body>
     <h1>Tabelas Grandes</h1>
     <table>
+        <caption>Populacao dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -88,10 +107,46 @@
                 <td>Distrito Federal</td>
                 <td class="num">17 264 943</td>
             </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">17 264 943</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">210.147.125</td>
             </tr>
         </tfoot>
