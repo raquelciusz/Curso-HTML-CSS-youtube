@@ -41,3 +41,27 @@ iframe#tela {
     width: 269px;
     height: 471px;
 }
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px; /**pra mexer no tamanho das imagens**/
+    height: 50px;
+    margin: 10px; /**pra separar um pouco uma imagem da outra**/
+    border-radius: 50%; /**vai deixar redonda a imagem que era quadrada**/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.448);
+    box-sizing: border-box; /**aqui faz a configuracao da borda branca vazando pra dentro da imagem, conforme explicado nesse textao ali embaixo no hover**/
+}
+
+/**pra deixar uma imagem embaixo da outra vai no html e coloca <br> no final de cada tag a img**/
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.612); /**ao fazer isso e passar o mouse em cima vai aparecer uma borda branca mas que vaza pra fora da imagem, quero fazer ela vazar pra dentro, pra isso se usa a configuracao box-sizing:border-box foi usada na configuracao anterior desse hover**/
+    transform: translate(-3px, -3px); /**aqui faz o botao vazar pro ladinho ao passar o mouse em cima, faz ele ter movimento**/
+    box-shadow: 5px 5px 10px black; /**vai fazer a sombra ficar maior ao passar o mouse em cima**/
+    transition: transform 0.3s; /**vai fazer o movimento do botao ir mais suave, mais devagar**/
+    transition: border 1s; /**faz a bordinha branca aparecer 1s depois de passar o mouse em cima**/
+}
+
