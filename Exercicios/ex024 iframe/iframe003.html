@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 90vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faca uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius, deleniti ex eligendi inventore rerum amet officia neque praesentium natus, vero exercitationem, adipisci modi facilis veniam. Illo amet explicabo labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit animi unde ad, eaque corporis minus molestiae minima cumque aut voluptates, itaque excepturi obcaecati? Dolore nulla quo veniam adipisci, asperiores molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum labore nam debitis saepe neque odit, alias eaque voluptatum, ex animi illum quis hic. Facere quas at porro aspernatur recusandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ducimus numquam eos, reprehenderit vel excepturi quod quaerat fugiat reiciendis necessitatibus ullam possimus odit fuga distinctio dolor quae nesciunt sapiente laudantium?</p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira Pagina</a></li>
+        <li><a href="pag002.html" target="frame">Segunda Pagina</a></li>
+        <li><a href="pag003.html" target="frame">Terceira Pagina</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius, deleniti ex eligendi inventore rerum amet officia neque praesentium natus, vero exercitationem, adipisci modi facilis veniam. Illo amet explicabo labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit animi unde ad, eaque corporis minus molestiae minima cumque aut voluptates, itaque excepturi obcaecati? Dolore nulla quo veniam adipisci, asperiores molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum labore nam debitis saepe neque odit, alias eaque voluptatum, ex animi illum quis hic. Facere quas at porro aspernatur recusandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ducimus numquam eos, reprehenderit vel excepturi quod quaerat fugiat reiciendis necessitatibus ullam possimus odit fuga distinctio dolor quae nesciunt sapiente laudantium?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1> Escolha uma das opcoes acima </h1> <p>Esse src doc serve para voce colocar codigos html dentro do seu iframe, assim aparecera essas mensagens aqui como pagina inicial do seu iframe, a partir do momento que a pessoa clicar em um dos links e ele aparecer no seu iframe essa pagina inicial do iframe some, ela so aparecera de novo se a pagina for recarregada. Tambem e possivel colocar imagem aqui dentro, olhe a proxima tag de exemplo</p> <img src='imagens/cachorro.jpg'>">
+        <p>Infelizmente o seu navegador nao e compativel com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius, deleniti ex eligendi inventore rerum amet officia neque praesentium natus, vero exercitationem, adipisci modi facilis veniam. Illo amet explicabo labore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit animi unde ad, eaque corporis minus molestiae minima cumque aut voluptates, itaque excepturi obcaecati? Dolore nulla quo veniam adipisci, asperiores molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum labore nam debitis saepe neque odit, alias eaque voluptatum, ex animi illum quis hic. Facere quas at porro aspernatur recusandae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ducimus numquam eos, reprehenderit vel excepturi quod quaerat fugiat reiciendis necessitatibus ullam possimus odit fuga distinctio dolor quae nesciunt sapiente laudantium?</p>
+
+</body>
+</html>
