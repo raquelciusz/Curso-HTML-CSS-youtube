@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*Typical Devices Breakpoints
+Pequenas telas: ate 600px
+Celular: de 600px ate 768px
+Tablet: de 768px ate 992px
+Desktop: de 992px ate 1200px
+Grandes telas: acima de 1200px
+*/
+
+/*
+No outro css criamos o estilo focando em celular (mobile first)
+Agora nesse css aqui comecamos a configurar o que for necessario para telas maiores
+Abaixo colocamos min-width de 768px, ou seja, telas menores que 768 vai ficar com a configuracao padrao de mobile
+telas a partir de 768 terao essas novas configuracoes
+*/
+
+@media screen and (min-width: 768px) {
+    #burger {
+        display: none; /*isso faz o icone de 3 risquinhos sumir*/
+    }
+
+    menu {
+        display: block; /*isso faz o menu aparecer*/
+    }
+
+    menu > ul > li {
+        display: inline-block; /*isso faz o menu ficar um do ladinho do outro*/
+    }
+
+    main {
+        width: 768px;
+    }
+}
